@@ -11,3 +11,8 @@ for number in $(seq -f %02g 2 10); do
     ln -s 01.jpg ${number}.jpg
 done
 ```
+
+
+### Using Makefile
+
+See the [Makefile](Makefile).
