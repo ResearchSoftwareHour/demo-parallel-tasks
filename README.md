@@ -9,11 +9,13 @@ Image is in public domain and taken from https://en.wikipedia.org/wiki/Automatio
 
 ```bash
 $ mkdir -p result
-
 $ export MAGICK_THREAD_LIMIT=1
-
 $ convert 01.jpg -paint 5 result/01.jpg
 ```
+
+The `-paint 5` can be increased for longer runs and more
+"rough painting". The `export MAGICK_THREAD_LIMIT=1` is important
+to avoid that Imagemagick itself runs on several threads.
 
 Links created with:
 
